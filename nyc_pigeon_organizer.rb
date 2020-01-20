@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
     end
     if attribute == :lives
       data.each do |location, names|
-        name.each do |index|
+        names.each do |index|
           if new_pigeon_hash[index].include?(:lives)
             new_pigeon_hash[index][:lives] << location
           else
