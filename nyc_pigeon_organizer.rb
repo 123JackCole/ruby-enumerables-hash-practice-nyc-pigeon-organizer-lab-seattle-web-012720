@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
 #      data.each do |location, names|
         
 #      end
-    end
+#    end
   end
   p new_pigeon_hash
 end
