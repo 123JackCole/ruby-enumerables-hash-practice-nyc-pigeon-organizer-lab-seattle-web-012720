@@ -13,21 +13,21 @@ def nyc_pigeon_organizer(data)
         end
       end
     end
-#    if attribute == :gender
-#      data.each do |gender, names|
-#        names.each |index|
-#          if new_pigeon_hash[index]
-#            new_pigeon_hash[index][:color] << color.to_s 
-#          else
-#            new_pigeon_hash[index] = {:color => [color.to_s]}
-#          end
-#      end
-#    end
-#    if attribute == :lives
-#      data.each do |location, names|
+    if attribute == :gender
+      data.each do |gender, names|
+        names.each |index|
+          if new_pigeon_hash[index].include?(:gender)
+            new_pigeon_hash[index][:gender] << gender.to_s 
+          else
+            new_pigeon_hash[index] = {:gender => [color.to_s]}
+          end
+      end
+    end
+    if attribute == :lives
+      data.each do |location, names|
         
-#      end
-#    end
+      end
+    end
   end
   p new_pigeon_hash
 end
