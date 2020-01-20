@@ -1,3 +1,7 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  new_pigeon_hash = {}
+  
+  
+
+  p new_pigeon_hash
 end
