@@ -21,6 +21,7 @@ def nyc_pigeon_organizer(data)
           else
             new_pigeon_hash[index][:gender] = gender.to_s
           end
+        end
       end
     end
     if attribute == :lives
