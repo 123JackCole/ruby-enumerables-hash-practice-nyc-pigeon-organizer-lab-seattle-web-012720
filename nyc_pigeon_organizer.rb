@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
           if new_pigeon_hash[index].include?(:gender)
             new_pigeon_hash[index][:gender] << gender.to_s 
           else
-            new_pigeon_hash[index][:gender] = gender.to_s
+            new_pigeon_hash[index][:gender] = [gender.to_s]
           end
         end
       end
@@ -30,7 +30,7 @@ def nyc_pigeon_organizer(data)
           if new_pigeon_hash[index].include?(:lives)
             new_pigeon_hash[index][:lives] << location
           else
-            new_pigeon_hash[index][:lives] = location
+            new_pigeon_hash[index][:lives] = [location]
           end
         end
       end
