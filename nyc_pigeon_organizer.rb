@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
     end
     if attribute == :gender
       data.each do |gender, names|
-        names.each |index|
+        names.each do |index|
           if new_pigeon_hash[index].include?(:gender)
             new_pigeon_hash[index][:gender] << gender.to_s 
           else
