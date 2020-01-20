@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, data|
     if attribute == :color 
       data.each do |color, names|
-        names.each |index|
+        names.each do |index|
           new_pigeon_hash[index] = {:color => color.to_s}
         end
       end
